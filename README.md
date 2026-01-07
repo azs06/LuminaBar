@@ -24,7 +24,7 @@ brew install --cask luminabar
 
 ### Manual Download
 
-Download the latest `.dmg` from [Releases](https://github.com/yourusername/LuminaBar/releases), open it, and drag LuminaBar to Applications.
+Download the latest `.dmg` from [Releases](https://github.com/azs06/LuminaBar/releases), open it, and drag LuminaBar to Applications.
 
 ### Build from Source
 
