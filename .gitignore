@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Xcode (user-specific & generated)
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcodeuserstate
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode projects/workspaces generated from SwiftPM
+*.xcodeproj
+*.xcworkspace
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Build/Release artifacts
+*.app
+*.dmg
+*.pkg
+*.zip
+*.xcarchive
+Homebrew/
+.env
