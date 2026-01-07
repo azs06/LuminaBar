@@ -18,7 +18,7 @@ A native macOS menu bar app to control Yeelight smart bulbs on your local networ
 ### Homebrew (Recommended)
 
 ```bash
-brew tap yourusername/tap
+brew tap azs06/tap
 brew install --cask luminabar
 ```
 
@@ -29,7 +29,7 @@ Download the latest `.dmg` from [Releases](https://github.com/azs06/LuminaBar/re
 ### Build from Source
 
 ```bash
-git clone https://github.com/yourusername/LuminaBar.git
+git clone https://github.com/azs06/LuminaBar.git
 cd LuminaBar
 ./Scripts/build-app.sh
 cp -r LuminaBar.app /Applications/
