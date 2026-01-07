@@ -1,7 +1,7 @@
 import Foundation
 import Network
 
-@MainActor
+@preconcurrency @MainActor
 @Observable
 final class YeelightDevice: Identifiable, Hashable {
     let id: String

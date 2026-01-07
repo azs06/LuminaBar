@@ -1,7 +1,7 @@
 import Foundation
 import Network
 
-@MainActor
+@preconcurrency @MainActor
 @Observable
 final class YeelightManager {
     static let shared = YeelightManager()
@@ -49,8 +49,8 @@ final class YeelightManager {
         socket.setReceiveHandler(maximumMessageSize: 4096, rejectOversizedMessages: true) { [weak self] message, content, isComplete in
             guard let data = content, let response = String(data: data, encoding: .utf8) else { return }
             if let deviceInfo = self?.parseDiscoveryResponse(response) {
-                Task { @MainActor in
-                    guard let self = self else { return }
+                Task { @MainActor [weak self] in
+                    guard let self else { return }
                     if !self.devices.contains(where: { $0.id == deviceInfo.id }) {
                         let device = YeelightDevice(
                             id: deviceInfo.id,
